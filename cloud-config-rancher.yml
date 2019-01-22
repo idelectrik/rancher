@@ -1,0 +1,7 @@
+#cloud-config
+ssh_authorized_keys:
+- ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAlZ33uo0hakXWxafgAI+C+KTr5mtKbw4PXcQyQ97AdfFyWRZYpijvU7R7hq719A1Vn8WwjleUsUnWD4QZ7UDlOzn1TXMWwwGH+Fbgf4ioDKYP1aZWvbv93vGl6BjM/BLAGTBVzCSmB5f6oRbmcoLRCKL4qPEZdo23wPOLsQKZAV/W0QNc0foyYNJt7THjo71LH3fuXIrBqbVIk9JC6m3FU19txJYiBmF/yt/38opMdPFFDCuCKTZKhABrcSDfRDyse+jZuL9OAAdVs0ZtWCWAy00cvJrp5wqitZj5lsTdQXwSqI8AMvHFdbmG8RTWDHOzHJE058KhHCwJqOSCE4BQoQ== rsa-key-20190122
+
+rancher:
+console: ubuntu
+resize_device: /dev/sda

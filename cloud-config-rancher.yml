@@ -4,4 +4,7 @@ ssh_authorized_keys:
 
 rancher:
 console: ubuntu
+runcmd:
+- apt update
+- [apt install, --no-install-recommends, open-iscsi]
 resize_device: /dev/sda

@@ -1,6 +1,11 @@
 #cloud-config
+users:
+  - name: demo
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
 ssh_authorized_keys:
-- ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAlZ33uo0hakXWxafgAI+C+KTr5mtKbw4PXcQyQ97AdfFyWRZYpijvU7R7hq719A1Vn8WwjleUsUnWD4QZ7UDlOzn1TXMWwwGH+Fbgf4ioDKYP1aZWvbv93vGl6BjM/BLAGTBVzCSmB5f6oRbmcoLRCKL4qPEZdo23wPOLsQKZAV/W0QNc0foyYNJt7THjo71LH3fuXIrBqbVIk9JC6m3FU19txJYiBmF/yt/38opMdPFFDCuCKTZKhABrcSDfRDyse+jZuL9OAAdVs0ZtWCWAy00cvJrp5wqitZj5lsTdQXwSqI8AMvHFdbmG8RTWDHOzHJE058KhHCwJqOSCE4BQoQ== rsa-key-20190122
+- ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAqyn8rwKxQs/xhytS41r+Ybko/HpowDf88nUfg2FAOjujQQzV+Jg+uC6Y6ddCvsds8KVnADIxxtm2jvi1f0YeU//awov9hj1leqAgbwotIXrSLiRBU8G2nQU1SQj7G8rEQLZJe6CFjJXV/iKA531r6FQk0qj+ZMj0wmi+lQ7J+TvD4h3ZPDE5JuscbnfpdsdhDTQ8J9sDUDhzYDahALVkqNZ5Pr1Dd3P0tTK3BNE3dcXQFHfP2JV5t2VpLc4Zp65VN4LOBajQm9WOm1qf86wA6g+j1JoeiJ64XlNeYZZMMX721DDK84Z8Hft1QYqzrbFuyGnyCgAtitaYsgbeIRrYfw==
 
 rancher:
 console: ubuntu
